@@ -1,0 +1,43 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebars, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src --ignore ./src/public",
+    "watch": "webpack -w --mode development",
+    "start": "node src"
+  },
+  "author": "Leonardo",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "handlebars": "^4.7.6",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.11.11",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^4.0.2",
+    "sweetalert2": "^10.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
