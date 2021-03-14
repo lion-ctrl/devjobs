@@ -1,7 +1,7 @@
 // ? express ----
 const express = require("express");
 const session = require("express-session");
-const expressValidator = require("express-validator");
+// const expressValidator = require("express-validator");
 const flash = require("connect-flash");
 // ? handlebars ----
 const exphbs = require("express-handlebars");
@@ -27,7 +27,7 @@ const app = express();
 require("./config/db");
 
 // ? settings
-app.set("port", process.env.PORT || 3000);
+app.set("port",4000);
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -45,7 +45,6 @@ app.engine(
 app.set("view engine", "hbs");
 
 // ? middlewares
-// app.use(expressValidator());
 app.use(
 	session({
 		secret: process.env.SECRETO,
